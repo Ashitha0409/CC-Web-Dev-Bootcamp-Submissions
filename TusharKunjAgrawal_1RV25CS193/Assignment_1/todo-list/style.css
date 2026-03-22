@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.header {
+  margin-top: 40px;
+}
+
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.upload-btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+.bio {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.input-section {
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #ff7a18;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px auto;
+  padding: 12px;
+  width: 280px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  color: white;
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
