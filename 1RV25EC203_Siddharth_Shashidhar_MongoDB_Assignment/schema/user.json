@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "u01",
+    "name": "ABCD",
+    "email": "abcd@aa.edu.in",
+    "skills": ["Python", "Data Analysis", "Machine Learning", "Django"],
+    "bookmarks": ["opp_99"]
+  },
+  {
+    "_id": "u02",
+    "name": "EFGH",
+    "email": "efgh@aa.edu.in",
+    "skills": ["React", "UI Design", "JavaScript", "CSS", "HTML"],
+    "bookmarks": []
+  },
+  {
+    "_id": "u03",
+    "name": "IJKL",
+    "email": "ijkl@aa.edu.in",
+    "skills": ["Java", "Spring Boot", "Microservices", "AWS"],
+    "bookmarks": ["opp_99", "opp_100"]
+}
+]
