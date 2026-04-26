@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "app_500",
+    "opportunity_id": "opp_99",
+    "applicant_id": "u02",
+    "status": "applied",
+    "applied_date": "2026-04-25"
+  },
+  {
+    "_id": "app_501",
+    "opportunity_id": "opp_100",
+    "applicant_id": "u01",
+    "status": "applied",
+    "applied_date": "2026-04-25"
+  },
+  {
+    "_id": "app_502",
+    "opportunity_id": "opp_100",
+    "applicant_id": "u03",
+    "status": "applied",
+    "applied_date": "2026-04-26"
+  }
+]
