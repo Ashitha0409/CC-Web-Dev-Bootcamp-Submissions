@@ -1,0 +1,9 @@
+[
+  {
+    "_id": "app_501",
+    "opportunity_id": "opp_101",
+    "applicant_id": "user_02",
+    "status": "pending",
+    "applied_at": "2026-04-26T18:00:00Z"
+  }
+]
