@@ -1,0 +1,73 @@
+body{
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+#avatar_list {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(20, 211, 192);
+    border-radius: 50%;
+    margin: 20px,auto;
+    border: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#avatar_name {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    font-size: 14px;
+    color: #8f50e1;
+}
+
+.to_do_items{
+    background: rgb(239, 216, 216);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#add_task_button{
+    background-color: #36e33c;
+    color: rgb(250, 224, 224);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ul{
+    list-style-type: none ;
+    padding: 0 ;
+}
+
+li{
+    background: #73e7fe;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.delete_button{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+}
