@@ -1,165 +1,22 @@
+# Smart Campus Hub – Database Design
+### Project Overview
+This database is designed to handle a high-traffic campus portal where students find opportunities and engage in discussions. The focus is on fast loading for posts and structured data for applications.
 
-# 🚀 CC Web Dev Bootcamp – Submissions
+### Collections & Linking
+Users: Stores student profiles and their skill sets.
 
-Welcome! This repository is where you will submit your assignments for the Coding Club Web Development Bootcamp.  
-**Build consistently. Learn deeply. Improve every time.**
+Opportunities: Stores internships and events. It embeds comments for performance.
 
----
+Applications: A separate collection that references both User and Opportunity IDs.
 
-## 📂 Folder Structure (STRICT)
+### Embedding vs. Referencing Decisions
+Embedding (Comments in Opportunities): I chose to embed comments because when a student views an internship, they should see the discussion immediately without a second database query.
 
-Follow this exactly:
+Referencing (Users in Applications): I used referencing here to avoid making the Opportunity document too large. If 200 students apply, embedding them all would hit the 16MB limit and slow down the system.
 
-```
+### Smart Feature: Skill-Match Filtering
+The "Smart" feature is Skill-Based Filtering.
 
-YourName_USN/
-│
-├── Assignment_1/
-│   └── (files)
-│
-├── Assignment_2/
-│   └── (files)
-│
-└── ...
+How it works: Each Opportunity has a required_skills array.
 
-```
-
----
-
-## 📌 Naming Convention
-
-**Format:**
-
-```
-
-FullName_USN
-
-```
-
-**Example:**
-
-```
-
-Ashitha_s_patil_1RV24CY006
-
-````
-
-⚠️ Incorrect naming or structure may lead to your submission being ignored.
-
----
-
-## 📝 What to Submit
-
-For each assignment:
-
-- Create a new folder: `Assignment_X`
-- Include all required files
-- Ensure your project:
-  - Runs without errors
-  - Is neatly organized
-  - Uses meaningful file names
-
-**(Optional but recommended)**
-
-Add a `README.md` explaining:
-- What you built
-- How to run it
-
----
-
-## 🔀 Submission Workflow (Do This Every Time)
-
-### 1. Fork the Repository  
-👉 (https://github.com/Ashitha0409/CC-Web-Dev-Bootcamp-Submissions.git)
-Click **Fork**
-
----
-
-### 2. Clone Your Fork
-
-```bash
-git clone https://github.com/<your-username>/CC-Web-Dev-Bootcamp-Submissions.git
-cd CC-Web-Dev-Bootcamp-Submissions
-````
-
----
-
-### 3. (First Time Only) Create Your Folder
-
-```bash
-mkdir YourName_USN
-```
-
----
-
-### 4. Add Your Assignment
-
-```
-YourName_USN/Assignment_X/
-```
-
----
-
-### 5. Stage, Commit, Push
-
-```bash
-git add .
-git commit -m "Assignment_X - YourName"
-git push origin main
-```
-
----
-
-### 6. Create Pull Request (PR)
-
-* Go to your fork on GitHub
-* Click **Compare & Pull Request**
-* Submit the PR
-
----
-
-## 🔁 Updating Your Fork (IMPORTANT)
-
-Before every new assignment, sync your repo:
-
-```bash
-git remote add upstream https://github.com/Ashitha0409/CC-Web-Dev-Bootcamp-Submissions.git
-git pull upstream main
-git push origin main
-```
-
----
-
-## ⚠️ Rules
-
-❌ Do NOT touch other students' folders
-❌ Do NOT rename/delete existing content
-❌ Do NOT push directly to main repo
-
-✅ Always submit via PR
-✅ Follow structure strictly
-
----
-
-## 💡 Tips
-
-* Start early — rushed work shows
-* If something breaks, debug it (that’s where real learning happens)
-* Don’t just copy — understand what you write
-
----
-
-## 🎯 Final Note
-
-Don’t treat this like a checklist. Treat it like your first step into building real-world projects.
-
-**Consistency > perfection. Keep showing up.**
-
----
-
-### 💻🔥 Happy coding
-
-````
-
----
-
+Benefit: The system can automatically show students the most relevant internships based on the skills array in their User profile, reducing the time spent searching.

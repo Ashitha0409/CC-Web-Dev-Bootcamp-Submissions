@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "user_01",
+    "name": "Arjun Mehta",
+    "email": "arjun@campus.edu",
+    "skills": ["Python", "ML", "UI/UX"],
+    "bookmarked_opps": ["opp_101", "opp_105"], 
+    "joined_at": "2026-01-15T10:00:00Z"
+  }
+]
